@@ -1,0 +1,38 @@
+number of trainable parameters: 3.27M
+Epoch [1/1], Step [100/473591], Loss: 10.8080
+Epoch [1/1], Step [200/473591], Loss: 10.7854
+Epoch [1/1], Step [300/473591], Loss: 10.7492
+Epoch [1/1], Step [400/473591], Loss: 10.6920
+Epoch [1/1], Step [500/473591], Loss: 10.6136
+Epoch [1/1], Step [600/473591], Loss: 10.5134
+Epoch [1/1], Step [700/473591], Loss: 10.3918
+Epoch [1/1], Step [800/473591], Loss: 10.2576
+Epoch [1/1], Step [900/473591], Loss: 10.1169
+Epoch [1/1], Step [1100/473591], Loss: 9.8288
+Epoch [1/1], Step [1200/473591], Loss: 9.6836
+Epoch [1/1], Step [1300/473591], Loss: 9.5512
+Epoch [1/1], Step [1400/473591], Loss: 9.4276
+Epoch [1/1], Step [1500/473591], Loss: 9.3020
+Epoch [1/1], Step [1600/473591], Loss: 9.1880
+Epoch [1/1], Step [1700/473591], Loss: 9.0809
+Epoch [1/1], Step [1800/473591], Loss: 8.9842
+Epoch [1/1], Step [1900/473591], Loss: 8.8899
+Epoch [1/1], Step [2100/473591], Loss: 8.7178
+Epoch [1/1], Step [2200/473591], Loss: 8.6389
+Epoch [1/1], Step [2300/473591], Loss: 8.5620
+Epoch [1/1], Step [2400/473591], Loss: 8.4890
+Epoch [1/1], Step [2500/473591], Loss: 8.4227
+Epoch [1/1], Step [2600/473591], Loss: 8.3579
+Epoch [1/1], Step [2700/473591], Loss: 8.2960
+Epoch [1/1], Step [2800/473591], Loss: 8.2406
+Epoch [1/1], Step [2900/473591], Loss: 8.1860
+Traceback (most recent call last):
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 141, in <module>
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 112, in train_model
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = _utils.pin_memory.pin_memory(data, self._pin_memory_device)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 72, in pin_memory
+    return type(data)([pin_memory(sample, device) for sample in data])  # type: ignore[call-arg]
+KeyboardInterrupt

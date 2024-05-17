@@ -1,0 +1,348 @@
+2024-05-16 21:30:47,763 INFO    StreamThr :838153 [internal.py:wandb_internal():85] W&B internal server running at pid: 838153, started at: 2024-05-16 21:30:47.763368
+2024-05-16 21:30:47,765 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status
+2024-05-16 21:30:47,766 INFO    WriterThread:838153 [datastore.py:open_for_write():87] open: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/run-blex297l.wandb
+2024-05-16 21:30:47,767 DEBUG   SenderThread:838153 [sender.py:send():378] send: header
+2024-05-16 21:30:47,778 DEBUG   SenderThread:838153 [sender.py:send():378] send: run
+2024-05-16 21:30:48,090 INFO    SenderThread:838153 [dir_watcher.py:__init__():211] watching files in: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files
+2024-05-16 21:30:48,090 INFO    SenderThread:838153 [sender.py:_start_run_threads():1123] run started: blex297l with start time 1715920247.763194
+2024-05-16 21:30:48,099 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: check_version
+2024-05-16 21:30:48,100 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: check_version
+2024-05-16 21:30:48,233 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: run_start
+2024-05-16 21:30:48,262 DEBUG   HandlerThread:838153 [system_info.py:__init__():26] System info init
+2024-05-16 21:30:48,262 DEBUG   HandlerThread:838153 [system_info.py:__init__():41] System info init done
+2024-05-16 21:30:48,262 INFO    HandlerThread:838153 [system_monitor.py:start():194] Starting system monitor
+2024-05-16 21:30:48,262 INFO    SystemMonitor:838153 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-16 21:30:48,262 INFO    HandlerThread:838153 [system_monitor.py:probe():214] Collecting system info
+2024-05-16 21:30:48,263 INFO    SystemMonitor:838153 [interfaces.py:start():188] Started cpu monitoring
+2024-05-16 21:30:48,263 INFO    SystemMonitor:838153 [interfaces.py:start():188] Started disk monitoring
+2024-05-16 21:30:48,264 INFO    SystemMonitor:838153 [interfaces.py:start():188] Started gpu monitoring
+2024-05-16 21:30:48,264 INFO    SystemMonitor:838153 [interfaces.py:start():188] Started memory monitoring
+2024-05-16 21:30:48,265 INFO    SystemMonitor:838153 [interfaces.py:start():188] Started network monitoring
+2024-05-16 21:30:48,302 DEBUG   HandlerThread:838153 [system_info.py:probe():150] Probing system
+2024-05-16 21:30:48,308 DEBUG   HandlerThread:838153 [system_info.py:_probe_git():135] Probing git
+2024-05-16 21:30:48,320 DEBUG   HandlerThread:838153 [system_info.py:_probe_git():143] Probing git done
+2024-05-16 21:30:48,320 DEBUG   HandlerThread:838153 [system_info.py:probe():198] Probing system done
+2024-05-16 21:30:48,320 DEBUG   HandlerThread:838153 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-107-generic-x86_64-with-glibc2.31', 'python': '3.9.19', 'heartbeatAt': '2024-05-17T04:30:48.302762', 'startedAt': '2024-05-17T04:30:47.759040', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/alex/ECE239AS/MiniGPT/train.py', 'codePathLocal': 'train.py', 'codePath': 'MiniGPT/train.py', 'git': {'remote': 'https://github.com/chenggong-zhang/ECE239AS.git', 'commit': '09fdc3468055118cbea5671d6137b43e55e1d3d8'}, 'email': '60725265+chenggong-zhang@users.noreply.github.com', 'root': '/home/alex/ECE239AS', 'host': 'alex-ubuntu20', 'username': 'alex', 'executable': '/home/alex/anaconda3/envs/239as/bin/python3', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2276.84246875, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 4058.959, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}], 'disk': {'/': {'total': 302.1151466369629, 'used': 30.00986099243164}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.68806838989258}}
+2024-05-16 21:30:48,320 INFO    HandlerThread:838153 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-16 21:30:48,320 INFO    HandlerThread:838153 [system_monitor.py:probe():227] Publishing system info
+2024-05-16 21:30:48,320 DEBUG   HandlerThread:838153 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-16 21:30:49,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/conda-environment.yaml
+2024-05-16 21:30:49,438 DEBUG   HandlerThread:838153 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-16 21:30:49,439 INFO    HandlerThread:838153 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-16 21:30:49,441 DEBUG   SenderThread:838153 [sender.py:send():378] send: files
+2024-05-16 21:30:49,441 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-16 21:30:49,508 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-16 21:30:49,509 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: python_packages
+2024-05-16 21:30:49,510 DEBUG   SenderThread:838153 [sender.py:send():378] send: telemetry
+2024-05-16 21:30:49,510 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:30:49,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:30:49,900 INFO    wandb-upload_0:838153 [upload_job.py:push():130] Uploaded file /tmp/tmp00ddh_a3wandb/r7wsq1qa-wandb-metadata.json
+2024-05-16 21:30:50,090 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/conda-environment.yaml
+2024-05-16 21:30:50,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:30:50,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/requirements.txt
+2024-05-16 21:30:50,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-metadata.json
+2024-05-16 21:30:50,451 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,452 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,452 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,454 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:50,556 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,557 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,557 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,557 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:50,661 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,662 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,662 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,662 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:50,766 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,767 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,767 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,767 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:50,875 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,876 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,876 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,876 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:50,984 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:50,985 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:50,985 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:50,985 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:51,088 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:51,089 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:51,089 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:51,089 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:51,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:30:51,193 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:51,194 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:51,194 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:51,194 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:51,297 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:30:51,297 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:30:51,298 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:30:51,299 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:30:52,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:30:52,091 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:30:53,299 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:30:54,092 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:30:58,300 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:03,301 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:04,510 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:31:04,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:31:08,717 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:13,718 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:18,722 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:19,097 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/config.yaml
+2024-05-16 21:31:19,509 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:31:19,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:31:24,769 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:29,770 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:34,509 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:31:34,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:31:35,361 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,362 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,362 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,362 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:35,364 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:35,475 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,476 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,476 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,476 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:35,585 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,586 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,586 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,586 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:35,699 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,700 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,700 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,700 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:35,810 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,811 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,811 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,811 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:35,919 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:35,920 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:35,920 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:35,920 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:36,026 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:36,027 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:36,027 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:36,027 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:36,101 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:31:36,101 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:31:36,132 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:36,132 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:36,132 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:36,133 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:36,243 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:36,243 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:36,243 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:36,244 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:36,354 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:31:36,355 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:31:36,355 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:31:36,355 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:31:37,101 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:31:38,101 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:31:41,357 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:46,358 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:48,266 DEBUG   SystemMonitor:838153 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-16 21:31:48,266 DEBUG   SenderThread:838153 [sender.py:send():378] send: stats
+2024-05-16 21:31:49,509 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:31:49,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:31:51,670 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:31:56,670 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:01,672 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:04,510 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:32:04,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:32:07,607 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:12,608 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:17,608 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:18,267 DEBUG   SenderThread:838153 [sender.py:send():378] send: stats
+2024-05-16 21:32:19,509 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:32:19,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:32:21,490 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:21,491 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:21,491 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:21,492 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:21,605 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:21,606 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:21,606 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:21,606 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:21,720 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:21,721 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:21,721 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:21,721 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:21,831 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:21,832 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:21,832 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:21,833 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:21,939 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:21,939 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:21,939 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:21,939 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:22,052 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:22,052 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:22,052 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:22,053 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:22,112 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:32:22,163 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:22,164 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:22,164 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:22,164 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:22,279 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:22,280 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:22,280 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:22,280 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:22,400 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:22,401 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:22,401 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:22,402 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:22,515 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-16 21:32:22,516 DEBUG   SenderThread:838153 [sender.py:send():378] send: history
+2024-05-16 21:32:22,516 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: summary_record
+2024-05-16 21:32:22,516 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:23,113 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:32:23,517 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:24,113 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:32:28,517 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:33,518 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:34,510 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-16 21:32:34,510 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: stop_status
+2024-05-16 21:32:38,616 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:43,455 DEBUG   SenderThread:838153 [sender.py:send():378] send: exit
+2024-05-16 21:32:43,455 INFO    SenderThread:838153 [sender.py:send_exit():585] handling exit code: 255
+2024-05-16 21:32:43,455 INFO    SenderThread:838153 [sender.py:send_exit():587] handling runtime: 115
+2024-05-16 21:32:43,455 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:43,455 INFO    SenderThread:838153 [sender.py:send_exit():593] send defer
+2024-05-16 21:32:43,455 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,455 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-16 21:32:43,456 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,456 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-16 21:32:43,456 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 1
+2024-05-16 21:32:43,456 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,456 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-16 21:32:43,456 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,456 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-16 21:32:43,456 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 2
+2024-05-16 21:32:43,456 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,456 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-16 21:32:43,456 INFO    HandlerThread:838153 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-16 21:32:43,456 INFO    HandlerThread:838153 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-16 21:32:43,457 INFO    HandlerThread:838153 [interfaces.py:finish():200] Joined disk monitor
+2024-05-16 21:32:43,457 DEBUG   SystemMonitor:838153 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-16 21:32:43,457 DEBUG   SystemMonitor:838153 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-16 21:32:43,504 INFO    HandlerThread:838153 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-16 21:32:43,504 INFO    HandlerThread:838153 [interfaces.py:finish():200] Joined memory monitor
+2024-05-16 21:32:43,504 INFO    HandlerThread:838153 [interfaces.py:finish():200] Joined network monitor
+2024-05-16 21:32:43,504 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,504 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-16 21:32:43,504 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 3
+2024-05-16 21:32:43,505 DEBUG   SenderThread:838153 [sender.py:send():378] send: stats
+2024-05-16 21:32:43,505 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,505 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-16 21:32:43,505 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,505 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-16 21:32:43,505 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 4
+2024-05-16 21:32:43,505 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,505 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-16 21:32:43,505 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,505 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-16 21:32:43,505 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 5
+2024-05-16 21:32:43,505 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,505 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-16 21:32:43,505 DEBUG   SenderThread:838153 [sender.py:send():378] send: summary
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-16 21:32:43,506 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 6
+2024-05-16 21:32:43,506 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,506 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-16 21:32:43,506 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 7
+2024-05-16 21:32:43,506 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: status_report
+2024-05-16 21:32:43,506 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:43,506 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-16 21:32:43,506 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:43,506 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-16 21:32:44,118 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:32:44,455 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-16 21:32:45,460 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 8
+2024-05-16 21:32:45,460 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: poll_exit
+2024-05-16 21:32:45,460 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:45,461 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-16 21:32:45,461 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:45,461 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-16 21:32:45,461 INFO    SenderThread:838153 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-16 21:32:45,461 INFO    SenderThread:838153 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-16 21:32:45,480 INFO    SenderThread:838153 [job_builder.py:build():541] adding wandb-job metadata file
+2024-05-16 21:32:45,496 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 9
+2024-05-16 21:32:45,496 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:45,496 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-16 21:32:45,497 DEBUG   SenderThread:838153 [sender.py:send():378] send: artifact
+2024-05-16 21:32:45,989 INFO    SenderThread:838153 [sender.py:send_artifact():1467] sent artifact job-https___github.com_chenggong-zhang_ECE239AS.git_MiniGPT_train.py - {'id': 'QXJ0aWZhY3Q6ODM5NTk2NTY4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTgwNTcxMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODM5NTk2NTY4', 'versionIndex': 5}}}
+2024-05-16 21:32:45,990 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:45,990 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-16 21:32:45,990 INFO    SenderThread:838153 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-16 21:32:46,119 INFO    Thread-12 :838153 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:32:46,120 INFO    SenderThread:838153 [dir_watcher.py:finish():388] scan: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files
+2024-05-16 21:32:46,120 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/conda-environment.yaml conda-environment.yaml
+2024-05-16 21:32:46,120 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-metadata.json wandb-metadata.json
+2024-05-16 21:32:46,120 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log output.log
+2024-05-16 21:32:46,120 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json wandb-summary.json
+2024-05-16 21:32:46,125 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/config.yaml config.yaml
+2024-05-16 21:32:46,126 INFO    SenderThread:838153 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/requirements.txt requirements.txt
+2024-05-16 21:32:46,131 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 10
+2024-05-16 21:32:46,131 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:46,131 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-16 21:32:46,134 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:46,134 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-16 21:32:46,134 INFO    SenderThread:838153 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-16 21:32:46,392 INFO    wandb-upload_0:838153 [upload_job.py:push():130] Uploaded file /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/conda-environment.yaml
+2024-05-16 21:32:46,456 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-16 21:32:46,456 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: poll_exit
+2024-05-16 21:32:46,568 INFO    wandb-upload_2:838153 [upload_job.py:push():130] Uploaded file /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/wandb-summary.json
+2024-05-16 21:32:46,607 INFO    wandb-upload_1:838153 [upload_job.py:push():130] Uploaded file /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/output.log
+2024-05-16 21:32:46,622 INFO    wandb-upload_4:838153 [upload_job.py:push():130] Uploaded file /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/requirements.txt
+2024-05-16 21:32:46,628 INFO    wandb-upload_3:838153 [upload_job.py:push():130] Uploaded file /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/files/config.yaml
+2024-05-16 21:32:46,829 INFO    Thread-11 :838153 [sender.py:transition_state():613] send defer: 11
+2024-05-16 21:32:46,829 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:46,829 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-16 21:32:46,830 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:46,830 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-16 21:32:46,830 INFO    SenderThread:838153 [file_pusher.py:join():175] waiting for file pusher
+2024-05-16 21:32:46,830 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 12
+2024-05-16 21:32:46,830 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:46,830 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-16 21:32:46,830 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:46,830 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-16 21:32:46,831 INFO    SenderThread:838153 [file_stream.py:finish():601] file stream finish called
+2024-05-16 21:32:46,910 INFO    SenderThread:838153 [file_stream.py:finish():605] file stream finish is done
+2024-05-16 21:32:46,910 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 13
+2024-05-16 21:32:46,910 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:46,910 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-16 21:32:46,910 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:46,910 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-16 21:32:46,911 INFO    SenderThread:838153 [sender.py:transition_state():613] send defer: 14
+2024-05-16 21:32:46,911 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: defer
+2024-05-16 21:32:46,911 INFO    HandlerThread:838153 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-16 21:32:46,911 DEBUG   SenderThread:838153 [sender.py:send():378] send: final
+2024-05-16 21:32:46,911 DEBUG   SenderThread:838153 [sender.py:send():378] send: footer
+2024-05-16 21:32:46,911 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: defer
+2024-05-16 21:32:46,911 INFO    SenderThread:838153 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-16 21:32:46,912 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-16 21:32:46,912 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: poll_exit
+2024-05-16 21:32:46,913 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-16 21:32:46,913 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: poll_exit
+2024-05-16 21:32:46,913 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: server_info
+2024-05-16 21:32:46,913 DEBUG   SenderThread:838153 [sender.py:send_request():405] send_request: server_info
+2024-05-16 21:32:46,915 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-16 21:32:46,916 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-16 21:32:46,916 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-16 21:32:46,998 INFO    MainThread:838153 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-16 21:32:46,998 INFO    MainThread:838153 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-16 21:32:46,998 INFO    MainThread:838153 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-16 21:32:46,999 DEBUG   HandlerThread:838153 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-16 21:32:46,999 INFO    HandlerThread:838153 [handler.py:finish():882] shutting down handler
+2024-05-16 21:32:47,913 INFO    WriterThread:838153 [datastore.py:close():296] close: /home/alex/ECE239AS/MiniGPT/wandb/run-20240516_213047-blex297l/run-blex297l.wandb
+2024-05-16 21:32:47,998 INFO    SenderThread:838153 [sender.py:finish():1545] shutting down sender
+2024-05-16 21:32:47,998 INFO    SenderThread:838153 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-16 21:32:47,998 INFO    SenderThread:838153 [file_pusher.py:join():175] waiting for file pusher

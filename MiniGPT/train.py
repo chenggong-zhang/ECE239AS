@@ -89,6 +89,8 @@ def train_model(model, train_dataloader, eval_dataloader, num_epochs):
     for epoch in range(num_epochs):
         model.train()
         running_loss = 0.0
+        val_step = 10000
+        val_loss = 0.0
  
         
         for i, data in enumerate(train_dataloader):
@@ -104,38 +106,52 @@ def train_model(model, train_dataloader, eval_dataloader, num_epochs):
 
             running_loss += loss.item()
 
+            # if i == 0:
+            #     model.eval()
+            #     with torch.no_grad():
+            #       for i, data in enumerate(eval_dataloader):
+            #         inputs, labels = data
+            #         inputs, labels = inputs.to(device), labels.to(device)
+
+            #         outputs = model(inputs)
+            #         loss = criterion(outputs.view(-1, config.vocab_size), labels.view(-1))
+            #         val_loss += loss.item()
+            #         if i >= len(eval_dataloader) - 1:
+            #             break
+
+            #     val_loss /= len(eval_dataloader)
+            #     print(f"Epoch [{epoch + 1}/{num_epochs}], eval_loss: {val_loss:.4f}")
+            #     wandb.log({"val_loss": val_loss})
+
+            
             if config.to_log and (i + 1) % config.log_interval == 0:
                 wandb.log({"train_loss": running_loss / (i + 1)})
                 print(f"Epoch [{epoch + 1}/{num_epochs}], Step [{i + 1}/{len(train_dataloader)}], Loss: {running_loss / (i+1):.4f}")
 
-            if config.to_log and (i + 1) % config.save_iterations == 0:
-                print(f"Save {config.save_path}/model_epoch{epoch}_step{i+1}.pth")
-                torch.save(model.state_dict(), f"{config.save_path}/model_epoch{epoch}_step{i+1}.pth")
+            # if config.to_log and (i + 1) % config.save_iterations == 0:
+            #     print(f"Save {config.save_path}/model_epoch{epoch}_step{i+1}.pth")
+            #     torch.save(model.state_dict(), f"{config.save_path}/model_epoch{epoch}_step{i+1}.pth")
+
+            if config.to_log and (i + 1) % val_step == 0:
+                model.eval()
+                with torch.no_grad():
+                  for i, data in enumerate(eval_dataloader):
+                    inputs, labels = data
+                    inputs, labels = inputs.to(device), labels.to(device)
+
+                    outputs = model(inputs)
+                    loss = criterion(outputs.view(-1, config.vocab_size), labels.view(-1))
+                    val_loss += loss.item()
+                    if i >= len(eval_dataloader) - 1:
+                        break
+
+                val_loss /= len(eval_dataloader)
+                print(f"Epoch [{epoch + 1}/{num_epochs}], eval_loss: {val_loss:.4f}")
+                wandb.log({"val_loss": val_loss})
 
 
             if i >= len(train_dataloader) - 1:
                 break
-
-
-        # # Validation
-        # model.eval()
-        # val_loss = 0.0
-        # with torch.no_grad():
-        #     for i, data in enumerate(eval_dataloader):
-        #         inputs, labels = data
-        #         inputs, labels = inputs.to(device), labels.to(device)
-
-        #         outputs = model(inputs)
-        #         loss = criterion(outputs.view(-1, config.vocab_size), labels.view(-1))
-        #         val_loss += loss.item()
-        #         if i >= len(eval_dataloader) - 1:
-        #             break
-
-        # val_loss /= len(eval_dataloader)
-
-        # if config.to_log:
-        #     wandb.log({"val_loss": val_loss})
-
 
 
 # Call the training function

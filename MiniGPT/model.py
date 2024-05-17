@@ -150,12 +150,12 @@ class SingleHeadAttention(nn.Module):
 
         # ========= TODO : START ========= #
 
-        # self.key = ...
-        # self.query = ...
-        # self.value = ...
-        # self.dropout = ...
+        self.key = nn.Linear(self.input_dim, self.output_key_query_dim, bias=False)
+        self.query = nn.Linear(self.input_dim, self.output_key_query_dim, bias=False)
+        self.value = nn.Linear(self.input_dim, self.output_value_dim, bias=False)
+        self.dropout = nn.Dropout(dropout)
 
-        # causal_mask = ...
+        causal_mask = torch.triu(torch.ones(max_len, max_len), diagonal=1).bool()
         # ========= TODO : END ========= #
 
         self.register_buffer(
@@ -176,9 +176,29 @@ class SingleHeadAttention(nn.Module):
         """
 
         # ========= TODO : START ========= #
+        batch_size, num_tokens, _ = x.size()
 
-        raise NotImplementedError
+        # Compute key, query, and value projections
+        keys = self.key(x)  # (batch_size, num_tokens, output_key_query_dim)
+        queries = self.query(x)  # (batch_size, num_tokens, output_key_query_dim)
+        values = self.value(x)  # (batch_size, num_tokens, output_value_dim)
 
+        # Compute attention scores
+        scores = torch.matmul(queries, keys.transpose(-2, -1)) / (self.output_key_query_dim ** 0.5)  # (batch_size, num_tokens, num_tokens)
+
+        # Apply causal mask
+        mask = self.causal_mask[:num_tokens, :num_tokens]
+        mask = mask.to(scores.device)
+        scores = scores.masked_fill(mask, float('-inf'))
+
+        # Apply softmax to get attention weights
+        attn_weights = torch.softmax(scores, dim=-1)  # (batch_size, num_tokens, num_tokens)
+        attn_weights = self.dropout(attn_weights)  # Apply dropout
+
+        # Compute the final output as weighted sum of values
+        out = torch.matmul(attn_weights, values)  # (batch_size, num_tokens, output_value_dim)
+
+        return out
         # ========= TODO : END ========= #
 
 
@@ -206,10 +226,14 @@ class MultiHeadAttention(nn.Module):
         self.num_heads = num_heads
 
         # ========= TODO : START ========= #
+        head_dim = input_dim // num_heads
 
-        # self.head_{i} = ... # Use setattr to implement this dynamically, this is used as a placeholder
-        # self.out = ...
-        # self.dropout = ...
+        for i in range(num_heads):
+            setattr(self, f'head_{i}', SingleHeadAttention(input_dim, head_dim, head_dim, dropout))
+
+        # Output linear layer and dropout
+        self.out = nn.Linear(input_dim, input_dim, bias=True)
+        self.dropout = nn.Dropout(dropout)
 
         # ========= TODO : END ========= #
 
@@ -228,7 +252,20 @@ class MultiHeadAttention(nn.Module):
 
         # ========= TODO : START ========= #
 
-        raise NotImplementedError
+        head_outputs = []
+        for i in range(self.num_heads):
+            head = getattr(self, f'head_{i}')
+            head_output = head(x)
+            head_outputs.append(head_output)
+
+        # Concatenate outputs from all heads
+        concat_heads = torch.cat(head_outputs, dim=-1)
+
+        # Apply final linear layer and dropout
+        out = self.out(concat_heads)
+        out = self.dropout(out)
+
+        return out
 
         # ========= TODO : END ========= #
 

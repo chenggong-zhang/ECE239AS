@@ -1,0 +1,176 @@
+number of trainable parameters: 3.27M
+Epoch [1/1], Step [100/473591], Loss: 10.8082
+Epoch [1/1], Step [200/473591], Loss: 10.7846
+Epoch [1/1], Step [300/473591], Loss: 10.7489
+Epoch [1/1], Step [400/473591], Loss: 10.6929
+Epoch [1/1], Step [500/473591], Loss: 10.6153
+Epoch [1/1], Step [600/473591], Loss: 10.5166
+Epoch [1/1], Step [700/473591], Loss: 10.3958
+Epoch [1/1], Step [800/473591], Loss: 10.2664
+Epoch [1/1], Step [900/473591], Loss: 10.1259
+Epoch [1/1], Step [1000/473591], Loss: 9.9746
+Epoch [1/1], eval_loss: 8.5055
+Epoch [1/1], Step [1100/473591], Loss: 9.8291
+Epoch [1/1], Step [1200/473591], Loss: 9.6892
+Epoch [1/1], Step [1300/473591], Loss: 9.5544
+Epoch [1/1], Step [1400/473591], Loss: 9.4247
+Epoch [1/1], Step [1500/473591], Loss: 9.3088
+Epoch [1/1], Step [1600/473591], Loss: 9.1932
+Epoch [1/1], Step [1700/473591], Loss: 9.0861
+Epoch [1/1], Step [1800/473591], Loss: 8.9848
+Epoch [1/1], Step [1900/473591], Loss: 8.8922
+Epoch [1/1], Step [2000/473591], Loss: 8.8029
+Epoch [1/1], eval_loss: 7.0574
+Epoch [1/1], Step [2100/473591], Loss: 8.7164
+Epoch [1/1], Step [2200/473591], Loss: 8.6345
+Epoch [1/1], Step [2300/473591], Loss: 8.5601
+Epoch [1/1], Step [2400/473591], Loss: 8.4887
+Epoch [1/1], Step [2500/473591], Loss: 8.4211
+Epoch [1/1], Step [2600/473591], Loss: 8.3557
+Epoch [1/1], Step [2700/473591], Loss: 8.2941
+Epoch [1/1], Step [2800/473591], Loss: 8.2372
+Epoch [1/1], Step [2900/473591], Loss: 8.1788
+Epoch [1/1], Step [3000/473591], Loss: 8.1242
+Epoch [1/1], eval_loss: 6.5569
+Epoch [1/1], Step [3100/473591], Loss: 8.0735
+Epoch [1/1], Step [3200/473591], Loss: 8.0245
+Epoch [1/1], Step [3300/473591], Loss: 7.9783
+Epoch [1/1], Step [3400/473591], Loss: 7.9331
+Epoch [1/1], Step [3500/473591], Loss: 7.8915
+Epoch [1/1], Step [3600/473591], Loss: 7.8486
+Epoch [1/1], Step [3700/473591], Loss: 7.8084
+Epoch [1/1], Step [3800/473591], Loss: 7.7690
+Epoch [1/1], Step [3900/473591], Loss: 7.7305
+Epoch [1/1], Step [4000/473591], Loss: 7.6926
+Epoch [1/1], eval_loss: 6.2439
+Epoch [1/1], Step [4100/473591], Loss: 7.6559
+Epoch [1/1], Step [4200/473591], Loss: 7.6218
+Epoch [1/1], Step [4300/473591], Loss: 7.5900
+Epoch [1/1], Step [4400/473591], Loss: 7.5574
+Epoch [1/1], Step [4500/473591], Loss: 7.5250
+Epoch [1/1], Step [4600/473591], Loss: 7.4944
+Epoch [1/1], Step [4700/473591], Loss: 7.4634
+Epoch [1/1], Step [4800/473591], Loss: 7.4333
+Epoch [1/1], Step [4900/473591], Loss: 7.4028
+Epoch [1/1], Step [5000/473591], Loss: 7.3762
+Epoch [1/1], eval_loss: 6.0048
+Epoch [1/1], Step [5100/473591], Loss: 7.3486
+Epoch [1/1], Step [5200/473591], Loss: 7.3214
+Epoch [1/1], Step [5300/473591], Loss: 7.2959
+Epoch [1/1], Step [5400/473591], Loss: 7.2708
+Epoch [1/1], Step [5500/473591], Loss: 7.2447
+Epoch [1/1], Step [5600/473591], Loss: 7.2209
+Epoch [1/1], Step [5700/473591], Loss: 7.1972
+Epoch [1/1], Step [5800/473591], Loss: 7.1737
+Epoch [1/1], Step [5900/473591], Loss: 7.1513
+Epoch [1/1], Step [6000/473591], Loss: 7.1291
+Epoch [1/1], eval_loss: 5.8020
+Epoch [1/1], Step [6100/473591], Loss: 7.1071
+Epoch [1/1], Step [6200/473591], Loss: 7.0844
+Epoch [1/1], Step [6300/473591], Loss: 7.0625
+Epoch [1/1], Step [6400/473591], Loss: 7.0431
+Epoch [1/1], Step [6500/473591], Loss: 7.0222
+Epoch [1/1], Step [6600/473591], Loss: 7.0029
+Epoch [1/1], Step [6700/473591], Loss: 6.9825
+Epoch [1/1], Step [6800/473591], Loss: 6.9643
+Epoch [1/1], Step [6900/473591], Loss: 6.9443
+Epoch [1/1], Step [7000/473591], Loss: 6.9254
+Epoch [1/1], eval_loss: 5.6083
+Epoch [1/1], Step [7100/473591], Loss: 6.9070
+Epoch [1/1], Step [7200/473591], Loss: 6.8889
+Epoch [1/1], Step [7300/473591], Loss: 6.8710
+Epoch [1/1], Step [7400/473591], Loss: 6.8530
+Epoch [1/1], Step [7500/473591], Loss: 6.8355
+Epoch [1/1], Step [7600/473591], Loss: 6.8172
+Epoch [1/1], Step [7700/473591], Loss: 6.8006
+Epoch [1/1], Step [7800/473591], Loss: 6.7836
+Epoch [1/1], Step [7900/473591], Loss: 6.7677
+Epoch [1/1], Step [8000/473591], Loss: 6.7505
+Epoch [1/1], eval_loss: 5.4283
+Epoch [1/1], Step [8100/473591], Loss: 6.7330
+Epoch [1/1], Step [8200/473591], Loss: 6.7164
+Epoch [1/1], Step [8300/473591], Loss: 6.7010
+Epoch [1/1], Step [8400/473591], Loss: 6.6852
+Epoch [1/1], Step [8500/473591], Loss: 6.6698
+Epoch [1/1], Step [8600/473591], Loss: 6.6538
+Epoch [1/1], Step [8700/473591], Loss: 6.6381
+Epoch [1/1], Step [8800/473591], Loss: 6.6242
+Epoch [1/1], Step [8900/473591], Loss: 6.6099
+Epoch [1/1], Step [9000/473591], Loss: 6.5942
+Epoch [1/1], eval_loss: 5.2664
+Epoch [1/1], Step [9100/473591], Loss: 6.5804
+Epoch [1/1], Step [9200/473591], Loss: 6.5659
+Epoch [1/1], Step [9300/473591], Loss: 6.5507
+Epoch [1/1], Step [9400/473591], Loss: 6.5361
+Epoch [1/1], Step [9500/473591], Loss: 6.5216
+Epoch [1/1], Step [9600/473591], Loss: 6.5078
+Epoch [1/1], Step [9700/473591], Loss: 6.4939
+Epoch [1/1], Step [9800/473591], Loss: 6.4798
+Epoch [1/1], Step [9900/473591], Loss: 6.4667
+Epoch [1/1], Step [10000/473591], Loss: 6.4537
+Epoch [1/1], eval_loss: 5.1232
+Epoch [1/1], Step [10100/473591], Loss: 6.4403
+Epoch [1/1], Step [10200/473591], Loss: 6.4262
+Epoch [1/1], Step [10300/473591], Loss: 6.4139
+Epoch [1/1], Step [10400/473591], Loss: 6.4009
+Epoch [1/1], Step [10500/473591], Loss: 6.3882
+Epoch [1/1], Step [10600/473591], Loss: 6.3753
+Epoch [1/1], Step [10700/473591], Loss: 6.3634
+Epoch [1/1], Step [10800/473591], Loss: 6.3513
+Epoch [1/1], Step [10900/473591], Loss: 6.3392
+Epoch [1/1], Step [11000/473591], Loss: 6.3271
+Epoch [1/1], eval_loss: 5.0013
+Epoch [1/1], Step [11100/473591], Loss: 6.3151
+Epoch [1/1], Step [11200/473591], Loss: 6.3035
+Epoch [1/1], Step [11300/473591], Loss: 6.2909
+Epoch [1/1], Step [11400/473591], Loss: 6.2785
+Epoch [1/1], Step [11500/473591], Loss: 6.2667
+Epoch [1/1], Step [11600/473591], Loss: 6.2552
+Epoch [1/1], Step [11700/473591], Loss: 6.2435
+Epoch [1/1], Step [11800/473591], Loss: 6.2325
+Epoch [1/1], Step [11900/473591], Loss: 6.2221
+Epoch [1/1], Step [12000/473591], Loss: 6.2103
+Epoch [1/1], eval_loss: 4.8908
+Epoch [1/1], Step [12100/473591], Loss: 6.1990
+Epoch [1/1], Step [12200/473591], Loss: 6.1879
+Epoch [1/1], Step [12300/473591], Loss: 6.1772
+Epoch [1/1], Step [12400/473591], Loss: 6.1668
+Epoch [1/1], Step [12500/473591], Loss: 6.1558
+Epoch [1/1], Step [12600/473591], Loss: 6.1456
+Epoch [1/1], Step [12700/473591], Loss: 6.1348
+Epoch [1/1], Step [12800/473591], Loss: 6.1247
+Epoch [1/1], Step [12900/473591], Loss: 6.1144
+Epoch [1/1], Step [13000/473591], Loss: 6.1044
+Epoch [1/1], eval_loss: 4.8005
+Epoch [1/1], Step [13100/473591], Loss: 6.0941
+Epoch [1/1], Step [13200/473591], Loss: 6.0840
+Epoch [1/1], Step [13300/473591], Loss: 6.0740
+Epoch [1/1], Step [13400/473591], Loss: 6.0639
+Epoch [1/1], Step [13500/473591], Loss: 6.0535
+Epoch [1/1], Step [13600/473591], Loss: 6.0438
+Epoch [1/1], Step [13700/473591], Loss: 6.0350
+Epoch [1/1], Step [13800/473591], Loss: 6.0255
+Epoch [1/1], Step [13900/473591], Loss: 6.0156
+Epoch [1/1], Step [14000/473591], Loss: 6.0060
+Traceback (most recent call last):
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 140, in <module>
+    inputs, labels = inputs.to(device), labels.to(device)
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 120, in train_model
+    break
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 42, in fetch
+    return self.collate_fn(data)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 277, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 144, in collate
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 144, in <listcomp>
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 121, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 174, in collate_tensor_fn
+    return torch.stack(batch, 0, out=out)
+KeyboardInterrupt

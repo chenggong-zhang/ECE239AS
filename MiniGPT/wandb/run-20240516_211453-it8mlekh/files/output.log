@@ -1,0 +1,27 @@
+number of trainable parameters: 3.27M
+Epoch [1/1], Step [100/473591], Loss: 10.8083
+Epoch [1/1], Step [200/473591], Loss: 10.7853
+Epoch [1/1], Step [300/473591], Loss: 10.7495
+Epoch [1/1], Step [400/473591], Loss: 10.6946
+Epoch [1/1], Step [500/473591], Loss: 10.6163
+Epoch [1/1], Step [600/473591], Loss: 10.5194
+Epoch [1/1], Step [700/473591], Loss: 10.4011
+Epoch [1/1], Step [800/473591], Loss: 10.2701
+Epoch [1/1], Step [900/473591], Loss: 10.1287
+Epoch [1/1], Step [1000/473591], Loss: 9.9829
+Traceback (most recent call last):
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 150, in <module>
+    train_model(model, train_dataloader, eval_dataloader,1)
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 119, in train_model
+    val_loss = sum(criterion(model(inputs.to(device)).view(-1, outputs.size(-1)), targets.to(device).view(-1)) for inputs, targets in eval_dataloader) / len(eval_dataloader)
+  File "/home/alex/ECE239AS/MiniGPT/train.py", line 119, in <genexpr>
+    val_loss = sum(criterion(model(inputs.to(device)).view(-1, outputs.size(-1)), targets.to(device).view(-1)) for inputs, targets in eval_dataloader) / len(eval_dataloader)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 32, in fetch
+    data.append(next(self.dataset_iter))
+  File "/home/alex/ECE239AS/MiniGPT/dataset.py", line 34, in __iter__
+    idx = torch.randint(len(self.data) - self.context_length, (1,)).item()
+KeyboardInterrupt
