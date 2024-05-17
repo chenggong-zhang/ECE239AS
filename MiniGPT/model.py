@@ -54,7 +54,7 @@ class BigramLanguageModel(nn.Module):
         x = self.dropout(x)
         x = self.linear(x)
 
-        return x
+        return x.squeeze(1)
         # ========= TODO : END ========= #
 
     def _init_weights(self, module):
@@ -90,12 +90,11 @@ class BigramLanguageModel(nn.Module):
         """
 
         ### ========= TODO : START ========= ###
-        generated = torch.tensor(context, dtype=torch.long).to(next(self.parameters()).device)
-        context_tensor = torch.tensor(context, dtype=torch.long).unsqueeze(0).to(next(self.parameters()).device)
+        generated = context.clone().detach().long()
+        context_tensor = context.clone().detach().long().unsqueeze(0)
     
         for _ in range(max_new_tokens):
             logits = self.forward(context_tensor[:, -1:])
-            logits = logits[:, -1, :]
             probabilities = torch.softmax(logits, dim=-1)
             next_token = torch.multinomial(probabilities, num_samples=1)
             generated = torch.cat((generated, next_token.squeeze(1)), dim=0)

@@ -85,13 +85,13 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=3e-4)
 
 def train_model(model, train_dataloader, eval_dataloader, num_epochs):
+        
     for epoch in range(num_epochs):
         model.train()
         running_loss = 0.0
-        batch_count = 0
+ 
         
-        for i, data in enumerate(train_dataloader, 0):
-            batch_count += 1
+        for i, data in enumerate(train_dataloader):
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
 
@@ -100,30 +100,28 @@ def train_model(model, train_dataloader, eval_dataloader, num_epochs):
             outputs = model(inputs)
             loss = criterion(outputs.view(-1, config.vocab_size), labels.view(-1))
             loss.backward()
-
-            if config.to_clip_grad:
-                nn.utils.clip_grad_norm_(model.parameters(), config.gradient_clip)
-
             optimizer.step()
 
             running_loss += loss.item()
 
             if config.to_log and (i + 1) % config.log_interval == 0:
-                wandb.log({"train_loss": running_loss / config.log_interval})
-                print(f"Epoch [{epoch + 1}/{num_epochs}], Step [{i + 1}/{len(train_dataloader)}], Loss: {running_loss / config.log_interval:.4f}")
-                running_loss = 0.0
+                wandb.log({"train_loss": running_loss / (i + 1)})
+                print(f"Epoch [{epoch + 1}/{num_epochs}], Step [{i + 1}/{len(train_dataloader)}], Loss: {running_loss / (i+1):.4f}")
+
+            if config.to_log and (i + 1) % config.save_iterations == 0:
+                print(f"Save {config.save_path}/model_epoch{epoch}_step{i+1}.pth")
+                torch.save(model.state_dict(), f"{config.save_path}/model_epoch{epoch}_step{i+1}.pth")
+
 
             if i >= len(train_dataloader) - 1:
                 break
 
-        print(f"Total batches processed in epoch {epoch + 1}: {batch_count}")
 
         # # Validation
         # model.eval()
         # val_loss = 0.0
         # with torch.no_grad():
-        #     for i, data in enumerate(eval_dataloader, 0):
-        #         print(f"Processing batch {i + 1}/{len(eval_dataloader)}")
+        #     for i, data in enumerate(eval_dataloader):
         #         inputs, labels = data
         #         inputs, labels = inputs.to(device), labels.to(device)
 
@@ -138,10 +136,7 @@ def train_model(model, train_dataloader, eval_dataloader, num_epochs):
         # if config.to_log:
         #     wandb.log({"val_loss": val_loss})
 
-        # print(f"Validation Loss after Epoch [{epoch + 1}/{num_epochs}]: {val_loss:.4f}")
 
-        # if (epoch + 1) % config.save_iterations == 0 or (epoch + 1) == num_epochs:
-        #     torch.save(model.state_dict(), config.save_path / f"model_epoch_{epoch + 1}.pt")
 
 # Call the training function
-train_model(model, train_dataloader, eval_dataloader, 1)  # Set num_epochs to a small number for testing
+train_model(model, train_dataloader, eval_dataloader,1)
