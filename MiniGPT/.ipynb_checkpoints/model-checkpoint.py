@@ -294,10 +294,12 @@ class FeedForwardLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        self.fc1 = nn.Linear(input_dim, feedforward_dim, bias=True)
-        self.activation = nn.GELU()
-        self.fc2 = nn.Linear(feedforward_dim, input_dim, bias=True)
-        self.dropout = nn.Dropout(dropout)
+        # self.fc1 = ...
+        # self.activation = ...
+        # self.fc2 = ...
+        # self.fc2 = ...
+        # self.dropout = ...
+
         # ========= TODO : END ========= #
 
     def forward(self, x):
@@ -315,12 +317,8 @@ class FeedForwardLayer(nn.Module):
 
         ### ========= TODO : START ========= ###
 
-        x_1 = self.fc1(x)
-        x_act = self.activation(x_1)
-        x_2 = self.fc2(x_act)
-        x_output = self.dropout(x_2)
+        raise NotImplementedError
 
-        return x_output
         ### ========= TODO : END ========= ###
 
 
@@ -357,17 +355,8 @@ class LayerNorm(nn.Module):
 
         # ========= TODO : START ========= #
 
-        mean = input.mean(dim = -1, keepdim = True)
-        var = input.var(dim = -1, keepdim = True, unbiased = False)
+        raise NotImplementedError
 
-        input_normalized = (input - mean) / torch.sqrt(var + self.eps)
-
-        if self.elementwise_affine:
-            output = self.gamma * input_normalized + self.beta
-        else:
-            output = input_normalized
-
-        return output
         # ========= TODO : END ========= #
 
 
@@ -393,10 +382,10 @@ class TransformerLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        self.norm1 = LayerNorm(input_dim)
-        self.attention = MultiHeadAttention(input_dim, num_heads, dropout = 0.1)
-        self.norm2 = LayerNorm(input_dim)
-        self.feedforward = FeedForwardLayer(input_dim, feedforward_dim, dropout = 0.1)
+        # self.norm1 = ...
+        # self.attention = ...
+        # self.norm2 = ...
+        # self.feedforward = ...
 
         # ========= TODO : END ========= #
 
@@ -415,16 +404,7 @@ class TransformerLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        x_l = self.norm1(x)
-        attention_out = self.attention(x_l)
-        x_add = x + attention_out
-
-        x_l2 = self.norm2(x_add)
-        ffn_out = self.feedforward(x_l2)
-
-        x_next = x_add + ffn_out
-
-        return x_next
+        raise NotImplementedError
 
         # ========= TODO : END ========= #
 
@@ -500,31 +480,7 @@ class MiniGPT(nn.Module):
 
         ### ========= TODO : START ========= ###
 
-        batch_size, seq_len = x.shape
-
-        # Get token embeddings
-        token_embeddings = self.vocab_embedding(x)  # (batch_size, seq_len, embed_dim)
-
-        # Get positional embeddings
-        positional_embeddings = self.positional_embedding(self.pos[:seq_len])  # (seq_len, embed_dim)
-
-        # Add token and positional embeddings
-        embeddings = token_embeddings + positional_embeddings  # (batch_size, seq_len, embed_dim)
-
-        # Apply dropout
-        embeddings = self.embed_dropout(embeddings)
-
-        # Pass through transformer layers
-        for layer in self.transformer_layers:
-            embeddings = layer(embeddings)
-
-        # Apply prehead normalization
-        embeddings = self.prehead_norm(embeddings)
-
-        # Pass through the language modeling head to get logits
-        logits = self.head(embeddings)  # (batch_size, seq_len, vocab_size)
-
-        return logits
+        raise NotImplementedError
 
         ### ========= TODO : END ========= ###
 
