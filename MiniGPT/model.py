@@ -90,8 +90,8 @@ class BigramLanguageModel(nn.Module):
         """
 
         ### ========= TODO : START ========= ###
-        generated = context.clone().detach().long()
-        context_tensor = context.clone().detach().long().unsqueeze(0)
+        generated = torch.tensor(context, dtype=torch.long).to(next(self.parameters()).device)
+        context_tensor = torch.tensor(context, dtype=torch.long).unsqueeze(0).to(next(self.parameters()).device)
     
         for _ in range(max_new_tokens):
             logits = self.forward(context_tensor[:, -1:])
@@ -177,7 +177,7 @@ class SingleHeadAttention(nn.Module):
 
         # ========= TODO : START ========= #
         batch_size, num_tokens, _ = x.size()
-
+        
         # Compute key, query, and value projections
         keys = self.key(x)  # (batch_size, num_tokens, output_key_query_dim)
         queries = self.query(x)  # (batch_size, num_tokens, output_key_query_dim)
@@ -294,12 +294,10 @@ class FeedForwardLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        # self.fc1 = ...
-        # self.activation = ...
-        # self.fc2 = ...
-        # self.fc2 = ...
-        # self.dropout = ...
-
+        self.fc1 = nn.Linear(input_dim, feedforward_dim, bias=True)
+        self.activation = nn.GELU()
+        self.fc2 = nn.Linear(feedforward_dim, input_dim, bias=True)
+        self.dropout = nn.Dropout(dropout)
         # ========= TODO : END ========= #
 
     def forward(self, x):
@@ -317,8 +315,12 @@ class FeedForwardLayer(nn.Module):
 
         ### ========= TODO : START ========= ###
 
-        raise NotImplementedError
+        x_1 = self.fc1(x)
+        x_act = self.activation(x_1)
+        x_2 = self.fc2(x_act)
+        x_output = self.dropout(x_2)
 
+        return x_output
         ### ========= TODO : END ========= ###
 
 
@@ -355,8 +357,17 @@ class LayerNorm(nn.Module):
 
         # ========= TODO : START ========= #
 
-        raise NotImplementedError
+        mean = input.mean(dim = -1, keepdim = True)
+        var = input.var(dim = -1, keepdim = True, unbiased = False)
 
+        input_normalized = (input - mean) / torch.sqrt(var + self.eps)
+
+        if self.elementwise_affine:
+            output = self.gamma * input_normalized + self.beta
+        else:
+            output = input_normalized
+
+        return output
         # ========= TODO : END ========= #
 
 
@@ -382,10 +393,10 @@ class TransformerLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        # self.norm1 = ...
-        # self.attention = ...
-        # self.norm2 = ...
-        # self.feedforward = ...
+        self.norm1 = LayerNorm(input_dim)
+        self.attention = MultiHeadAttention(input_dim, num_heads, dropout = 0.1)
+        self.norm2 = LayerNorm(input_dim)
+        self.feedforward = FeedForwardLayer(input_dim, feedforward_dim, dropout = 0.1)
 
         # ========= TODO : END ========= #
 
@@ -404,7 +415,16 @@ class TransformerLayer(nn.Module):
 
         # ========= TODO : START ========= #
 
-        raise NotImplementedError
+        x_l = self.norm1(x)
+        attention_out = self.attention(x_l)
+        x_add = x + attention_out
+
+        x_l2 = self.norm2(x_add)
+        ffn_out = self.feedforward(x_l2)
+
+        x_next = x_add + ffn_out
+
+        return x_next
 
         # ========= TODO : END ========= #
 
@@ -480,7 +500,31 @@ class MiniGPT(nn.Module):
 
         ### ========= TODO : START ========= ###
 
-        raise NotImplementedError
+        batch_size, seq_len = x.shape
+
+        # Get token embeddings
+        token_embeddings = self.vocab_embedding(x)  # (batch_size, seq_len, embed_dim)
+
+        # Get positional embeddings
+        positional_embeddings = self.positional_embedding(self.pos[:seq_len])  # (seq_len, embed_dim)
+
+        # Add token and positional embeddings
+        embeddings = token_embeddings + positional_embeddings  # (batch_size, seq_len, embed_dim)
+
+        # Apply dropout
+        embeddings = self.embed_dropout(embeddings)
+
+        # Pass through transformer layers
+        for layer in self.transformer_layers:
+            embeddings = layer(embeddings)
+
+        # Apply prehead normalization
+        embeddings = self.prehead_norm(embeddings)
+
+        # Pass through the language modeling head to get logits
+        logits = self.head(embeddings)  # (batch_size, seq_len, vocab_size)
+
+        return logits
 
         ### ========= TODO : END ========= ###
 
@@ -512,7 +556,18 @@ class MiniGPT(nn.Module):
         """
 
         ### ========= TODO : START ========= ###
+        generated = torch.tensor(context, dtype=torch.long).to(next(self.parameters()).device)
+        context_tensor = torch.tensor(context, dtype=torch.long).unsqueeze(0).to(self.vocab_embedding.weight.device)
 
-        raise NotImplementedError
+
+        for _ in range(max_new_tokens):
+            logits = self.forward(context_tensor)  # (1, seq_len, vocab_size)
+            logits = logits[:, -1, :]  # (1, vocab_size)
+            probabilities = torch.softmax(logits, dim=-1)  # (1, vocab_size)
+            next_token = torch.multinomial(probabilities, num_samples=1)  # (1, 1)
+            generated = torch.cat((generated, next_token.squeeze(1)),dim =0)
+            context_tensor = torch.cat((context_tensor, next_token), dim=1)  # (1, seq_len+1)
+
+        return generated
 
         ### ========= TODO : END ========= ###
