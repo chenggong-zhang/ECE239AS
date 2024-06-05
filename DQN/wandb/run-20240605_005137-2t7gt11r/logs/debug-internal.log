@@ -1,0 +1,931 @@
+2024-06-05 00:51:37,435 INFO    StreamThr :5868 [internal.py:wandb_internal():85] W&B internal server running at pid: 5868, started at: 2024-06-05 00:51:37.435177
+2024-06-05 00:51:37,437 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status
+2024-06-05 00:51:37,441 INFO    WriterThread:5868 [datastore.py:open_for_write():87] open: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/run-2t7gt11r.wandb
+2024-06-05 00:51:37,441 DEBUG   SenderThread:5868 [sender.py:send():378] send: header
+2024-06-05 00:51:37,478 DEBUG   SenderThread:5868 [sender.py:send():378] send: run
+2024-06-05 00:51:37,839 INFO    SenderThread:5868 [dir_watcher.py:__init__():211] watching files in: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files
+2024-06-05 00:51:37,839 INFO    SenderThread:5868 [sender.py:_start_run_threads():1123] run started: 2t7gt11r with start time 1717573897.435093
+2024-06-05 00:51:37,848 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: check_version
+2024-06-05 00:51:37,848 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: check_version
+2024-06-05 00:51:38,005 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: run_start
+2024-06-05 00:51:38,034 DEBUG   HandlerThread:5868 [system_info.py:__init__():26] System info init
+2024-06-05 00:51:38,034 DEBUG   HandlerThread:5868 [system_info.py:__init__():41] System info init done
+2024-06-05 00:51:38,034 INFO    HandlerThread:5868 [system_monitor.py:start():194] Starting system monitor
+2024-06-05 00:51:38,035 INFO    SystemMonitor:5868 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-05 00:51:38,035 INFO    HandlerThread:5868 [system_monitor.py:probe():214] Collecting system info
+2024-06-05 00:51:38,035 INFO    SystemMonitor:5868 [interfaces.py:start():188] Started cpu monitoring
+2024-06-05 00:51:38,036 INFO    SystemMonitor:5868 [interfaces.py:start():188] Started disk monitoring
+2024-06-05 00:51:38,037 INFO    SystemMonitor:5868 [interfaces.py:start():188] Started gpu monitoring
+2024-06-05 00:51:38,037 INFO    SystemMonitor:5868 [interfaces.py:start():188] Started memory monitoring
+2024-06-05 00:51:38,038 INFO    SystemMonitor:5868 [interfaces.py:start():188] Started network monitoring
+2024-06-05 00:51:38,071 DEBUG   HandlerThread:5868 [system_info.py:probe():150] Probing system
+2024-06-05 00:51:38,075 DEBUG   HandlerThread:5868 [system_info.py:_probe_git():135] Probing git
+2024-06-05 00:51:38,085 DEBUG   HandlerThread:5868 [system_info.py:_probe_git():143] Probing git done
+2024-06-05 00:51:38,085 DEBUG   HandlerThread:5868 [system_info.py:probe():198] Probing system done
+2024-06-05 00:51:38,086 DEBUG   HandlerThread:5868 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-107-generic-x86_64-with-glibc2.31', 'python': '3.9.19', 'heartbeatAt': '2024-06-05T07:51:38.071239', 'startedAt': '2024-06-05T07:51:37.430006', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'ECE239AS/DQN/rl.ipynb', 'codePathLocal': None, 'root': '/home/alex/ECE239AS', 'git': {'remote': 'https://github.com/chenggong-zhang/ECE239AS.git', 'commit': 'f9778498d2747fdd7e45efd3e2230091702ce630'}, 'email': '60725265+chenggong-zhang@users.noreply.github.com', 'host': 'alex-ubuntu20', 'username': 'alex', 'executable': '/home/alex/anaconda3/envs/239as/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2252.7453125, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 3887.85, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}], 'disk': {'/': {'total': 302.1151466369629, 'used': 31.339134216308594}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.68806076049805}}
+2024-06-05 00:51:38,086 INFO    HandlerThread:5868 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-05 00:51:38,086 INFO    HandlerThread:5868 [system_monitor.py:probe():227] Publishing system info
+2024-06-05 00:51:38,086 DEBUG   HandlerThread:5868 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-05 00:51:38,841 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/conda-environment.yaml
+2024-06-05 00:51:39,355 DEBUG   HandlerThread:5868 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-05 00:51:39,355 INFO    HandlerThread:5868 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-05 00:51:39,358 DEBUG   SenderThread:5868 [sender.py:send():378] send: files
+2024-06-05 00:51:39,358 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-05 00:51:39,433 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-05 00:51:39,434 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: python_packages
+2024-06-05 00:51:39,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:51:39,434 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:51:39,701 DEBUG   SenderThread:5868 [sender.py:send():378] send: telemetry
+2024-06-05 00:51:39,701 DEBUG   SenderThread:5868 [sender.py:send():378] send: config
+2024-06-05 00:51:39,840 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/conda-environment.yaml
+2024-06-05 00:51:39,840 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/requirements.txt
+2024-06-05 00:51:39,840 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-metadata.json
+2024-06-05 00:51:39,886 INFO    wandb-upload_0:5868 [upload_job.py:push():130] Uploaded file /tmp/tmp79g5fsr7wandb/ykyfqvfx-wandb-metadata.json
+2024-06-05 00:51:42,702 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:51:47,703 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:51:50,257 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:51:50,258 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:51:50,258 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:51:50,260 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:51:50,842 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:51:50,843 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:51:52,843 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:51:53,261 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:51:54,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:51:54,434 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:51:56,479 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:51:56,480 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:51:56,480 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:51:56,482 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:51:56,844 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:51:58,523 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:51:58,845 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:02,401 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:02,402 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:02,402 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:02,403 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:02,846 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:04,404 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:04,846 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:08,457 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:08,457 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:08,457 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:08,459 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:08,847 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:09,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:52:09,438 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:09,549 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:52:09,847 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/config.yaml
+2024-06-05 00:52:10,848 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:14,446 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:14,447 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:14,447 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:14,449 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:14,849 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:15,487 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:16,849 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:20,384 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:20,385 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:20,385 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:20,387 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:20,850 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:21,387 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:22,851 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:24,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:52:24,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:52:26,338 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:26,339 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:26,339 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:26,340 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:26,851 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:27,379 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:28,852 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:32,380 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:32,492 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:32,493 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:32,493 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:32,495 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:32,853 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:34,853 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:37,496 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:38,039 DEBUG   SystemMonitor:5868 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-05 00:52:38,040 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:52:38,502 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:38,503 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:38,503 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:38,503 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:38,854 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:39,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:52:39,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:52:40,854 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:42,617 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:44,445 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:44,446 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:44,446 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:44,446 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:44,855 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:46,856 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:48,487 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:50,564 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:50,564 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:50,564 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:50,565 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:50,857 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:52,857 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:52:53,565 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:54,434 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:52:54,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:52:56,811 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:52:56,811 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:52:56,812 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:52:56,813 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:52:56,858 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:52:58,814 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:52:58,859 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:02,967 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:02,968 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:02,968 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:02,968 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:03,860 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:03,969 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:04,860 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:08,040 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:53:09,006 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:09,007 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:09,007 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:09,007 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:09,007 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:09,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:53:09,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:53:09,862 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:10,862 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:14,631 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:15,058 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:15,058 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:15,058 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:15,059 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:15,863 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:16,863 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:20,059 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:21,316 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:21,317 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:21,317 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:21,319 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:21,865 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:22,865 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:24,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:53:24,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:53:25,689 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:27,430 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:27,431 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:27,431 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:27,431 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:27,866 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:28,866 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:31,432 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:33,617 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:33,618 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:33,618 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:33,619 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:33,868 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:34,868 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:36,620 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:38,041 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:53:39,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:53:39,436 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:53:39,790 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:39,790 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:39,791 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:39,791 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:39,869 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:40,869 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:41,831 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:45,939 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:45,940 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:45,940 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:45,942 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:46,871 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:46,943 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:48,871 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:51,943 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:51,981 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:51,981 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:51,981 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:51,982 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:52,872 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:53:54,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:53:54,436 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:53:54,873 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:53:57,699 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:53:58,238 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:53:58,239 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:53:58,239 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:53:58,241 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:53:58,874 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:00,874 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:03,242 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:04,355 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:04,356 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:04,356 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:04,356 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:04,875 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:06,876 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:08,042 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:54:09,042 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:09,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:54:09,436 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:54:10,529 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:10,530 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:10,530 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:10,531 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:10,877 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:12,877 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:14,532 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:16,652 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:16,653 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:16,653 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:16,653 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:16,878 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:18,879 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:19,654 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:22,500 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:22,500 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:22,500 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:22,502 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:22,879 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:24,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:54:24,435 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:54:24,880 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:24,911 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:28,412 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:28,413 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:28,413 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:28,413 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:28,881 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:30,414 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:30,881 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:34,456 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:34,457 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:34,457 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:34,458 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:34,882 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:35,459 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:36,883 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:38,042 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:54:39,435 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:54:39,436 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:54:40,343 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:40,344 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:40,344 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:40,344 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:40,883 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:41,387 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:42,884 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:46,388 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:46,471 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:46,472 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:46,472 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:46,473 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:46,885 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:48,885 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:51,474 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:52,343 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:52,344 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:52,344 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:52,345 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:52,886 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:54:54,436 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:54:54,436 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:54:54,887 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:54:56,720 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:54:58,360 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:54:58,361 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:54:58,361 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:54:58,362 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:54:58,888 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:00,888 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:02,363 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:04,410 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:04,411 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:04,411 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:04,411 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:04,889 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:06,889 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:07,412 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:08,043 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:55:09,436 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:55:09,437 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:55:10,361 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:10,361 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:10,362 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:10,363 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:10,890 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:12,891 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:13,363 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:16,445 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:16,446 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:16,447 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:16,447 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:16,892 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:18,448 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:18,892 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:22,564 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:22,565 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:22,565 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:22,566 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:22,893 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:23,567 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:24,436 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:55:24,437 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:55:24,895 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:28,726 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:28,847 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:28,848 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:28,848 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:28,848 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:28,896 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:30,896 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:33,892 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:35,085 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:35,086 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:35,086 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:35,087 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:35,897 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:36,898 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:38,043 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:55:39,044 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:39,436 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:55:39,437 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:55:41,103 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:41,103 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:41,104 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:41,104 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:41,899 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:42,899 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:44,104 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:47,219 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:47,220 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:47,220 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:47,221 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:47,900 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:48,900 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:49,222 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:53,256 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:53,257 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:53,257 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:53,257 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:53,902 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:55:54,257 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:55:54,436 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:55:54,437 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:55:54,902 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:55:59,225 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:55:59,225 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:55:59,225 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:55:59,227 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:55:59,903 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:00,228 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:00,904 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:05,228 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:05,417 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:05,418 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:05,418 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:05,418 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:05,905 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:06,905 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:08,044 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:56:09,437 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:56:09,437 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:56:10,677 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:11,527 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:11,528 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:11,528 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:11,530 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:11,907 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:12,907 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:16,578 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:17,504 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:17,505 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:17,505 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:17,505 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:17,908 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:18,908 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:22,506 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:23,518 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:23,519 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:23,519 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:23,520 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:23,910 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:24,438 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:56:24,438 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:56:24,910 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:27,632 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:29,809 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:29,810 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:29,810 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:29,810 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:29,911 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:30,912 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:32,811 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:36,148 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:36,149 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:36,149 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:36,151 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:36,913 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:38,045 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:56:38,045 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:38,914 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:39,438 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:56:39,438 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:56:42,371 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-05 00:56:42,372 DEBUG   SenderThread:5868 [sender.py:send():378] send: history
+2024-06-05 00:56:42,372 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: summary_record
+2024-06-05 00:56:42,372 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 00:56:42,915 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 00:56:43,373 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:44,915 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 00:56:48,373 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:53,374 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:56:54,438 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:56:54,439 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:56:58,729 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:03,729 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:08,045 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:57:09,046 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:09,440 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:57:09,440 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:57:14,558 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:19,558 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:24,440 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:57:24,440 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:57:25,548 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:30,548 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:35,549 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:38,046 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:57:39,441 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:57:39,441 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:57:40,675 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:45,675 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:50,676 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:57:54,441 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:57:54,442 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:57:56,634 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:01,635 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:06,636 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:08,047 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:58:09,442 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:58:09,443 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:58:11,679 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:16,679 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:21,680 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:24,443 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:58:24,443 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:58:27,647 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:28,930 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: pause
+2024-06-05 00:58:28,930 INFO    HandlerThread:5868 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-05 00:58:28,930 INFO    HandlerThread:5868 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-05 00:58:28,931 DEBUG   SystemMonitor:5868 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-05 00:58:28,931 INFO    HandlerThread:5868 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-05 00:58:28,931 DEBUG   SystemMonitor:5868 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-05 00:58:28,931 INFO    HandlerThread:5868 [interfaces.py:finish():200] Joined disk monitor
+2024-06-05 00:58:28,964 INFO    HandlerThread:5868 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-05 00:58:28,964 INFO    HandlerThread:5868 [interfaces.py:finish():200] Joined memory monitor
+2024-06-05 00:58:28,964 INFO    HandlerThread:5868 [interfaces.py:finish():200] Joined network monitor
+2024-06-05 00:58:28,964 DEBUG   SenderThread:5868 [sender.py:send():378] send: stats
+2024-06-05 00:58:32,966 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:37,968 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:39,443 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:58:39,444 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:58:43,554 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:48,555 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:53,557 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:58:54,444 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:58:54,444 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:58:58,634 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:03,636 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:08,638 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:09,444 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:59:09,444 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:59:14,541 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:19,543 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:24,444 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:59:24,444 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:59:24,657 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:29,659 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:34,661 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:39,444 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:59:39,445 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:59:40,564 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:45,565 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:50,567 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 00:59:54,445 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 00:59:54,445 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 00:59:55,647 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:00,650 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:05,652 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:09,445 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 01:00:09,445 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 01:00:11,566 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:16,568 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:21,570 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:24,445 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 01:00:24,446 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 01:00:26,745 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:31,747 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:36,748 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:39,446 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 01:00:39,446 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 01:00:42,587 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:47,588 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:52,589 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:00:54,446 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-05 01:00:54,447 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: stop_status
+2024-06-05 01:00:57,658 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:01:01,639 DEBUG   SenderThread:5868 [sender.py:send():378] send: exit
+2024-06-05 01:01:01,639 INFO    SenderThread:5868 [sender.py:send_exit():585] handling exit code: 0
+2024-06-05 01:01:01,639 INFO    SenderThread:5868 [sender.py:send_exit():587] handling runtime: 410
+2024-06-05 01:01:01,641 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 01:01:01,641 INFO    SenderThread:5868 [sender.py:send_exit():593] send defer
+2024-06-05 01:01:01,641 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,641 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-05 01:01:01,641 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,642 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-05 01:01:01,642 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 1
+2024-06-05 01:01:01,642 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,642 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-05 01:01:01,642 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,642 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-05 01:01:01,642 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 2
+2024-06-05 01:01:01,642 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,642 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-05 01:01:01,642 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,642 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-05 01:01:01,643 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 3
+2024-06-05 01:01:01,643 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,643 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-05 01:01:01,643 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,643 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-05 01:01:01,643 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 4
+2024-06-05 01:01:01,643 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,643 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-05 01:01:01,643 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,643 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-05 01:01:01,643 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 5
+2024-06-05 01:01:01,643 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,643 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-05 01:01:01,644 DEBUG   SenderThread:5868 [sender.py:send():378] send: summary
+2024-06-05 01:01:01,649 INFO    SenderThread:5868 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-05 01:01:01,649 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,649 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-05 01:01:01,649 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 6
+2024-06-05 01:01:01,649 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,649 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-05 01:01:01,649 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,649 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-05 01:01:01,650 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 7
+2024-06-05 01:01:01,650 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: status_report
+2024-06-05 01:01:01,650 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:01,650 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-05 01:01:01,650 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:01,650 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-05 01:01:01,722 ERROR   FileStreamThread:5868 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/ucla-alex/racing-car-dqn/2t7gt11r/file_stream
+NoneType: None
+2024-06-05 01:01:02,005 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+2024-06-05 01:01:02,640 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-05 01:01:02,872 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 8
+2024-06-05 01:01:02,872 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: poll_exit
+2024-06-05 01:01:02,872 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:02,872 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-05 01:01:02,873 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:02,873 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-05 01:01:02,873 INFO    SenderThread:5868 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-05 01:01:02,873 INFO    SenderThread:5868 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-05 01:01:02,873 INFO    SenderThread:5868 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-06-05 01:01:02,891 INFO    SenderThread:5868 [job_builder.py:build():541] adding wandb-job metadata file
+2024-06-05 01:01:02,904 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 9
+2024-06-05 01:01:02,905 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:02,905 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-05 01:01:02,905 DEBUG   SenderThread:5868 [sender.py:send():378] send: artifact
+2024-06-05 01:01:03,006 INFO    Thread-12 :5868 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+2024-06-05 01:01:03,445 ERROR   SenderThread:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:03,445 ERROR   SenderThread:5868 [internal_api.py:execute():345] {"errors":[{"message":"failed to find run racing-car-dqn/2t7gt11r","path":["useArtifact"]}],"data":{"useArtifact":null}}
+2024-06-05 01:01:03,446 ERROR   SenderThread:5868 [sender.py:send_artifact():1469] send_artifact: failed for artifact "job/job-https___github.com_chenggong-zhang_ECE239AS.git_ECE239AS_DQN_rl.ipynb": It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:03,446 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:03,446 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-05 01:01:03,446 INFO    SenderThread:5868 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-05 01:01:03,640 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-05 01:01:04,006 INFO    SenderThread:5868 [dir_watcher.py:finish():388] scan: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files
+2024-06-05 01:01:04,007 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/conda-environment.yaml conda-environment.yaml
+2024-06-05 01:01:04,007 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-metadata.json wandb-metadata.json
+2024-06-05 01:01:04,007 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log output.log
+2024-06-05 01:01:04,007 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json wandb-summary.json
+2024-06-05 01:01:04,008 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/config.yaml config.yaml
+2024-06-05 01:01:04,012 INFO    SenderThread:5868 [dir_watcher.py:finish():402] scan save: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/requirements.txt requirements.txt
+2024-06-05 01:01:04,012 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 10
+2024-06-05 01:01:04,012 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: poll_exit
+2024-06-05 01:01:04,013 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:04,013 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-05 01:01:04,013 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:04,013 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-05 01:01:04,013 INFO    SenderThread:5868 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-05 01:01:04,091 ERROR   wandb-upload_1:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:04,091 ERROR   wandb-upload_1:5868 [internal_api.py:execute():345] {"errors":[{"message":"run racing-car-dqn/2t7gt11r not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-06-05 01:01:04,091 ERROR   Thread-11 :5868 [step_upload.py:_handle_event():144] Failed to upload file: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2357, in upload_urls
+    query_result = self.gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:04,096 ERROR   wandb-upload_0:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:04,103 ERROR   wandb-upload_0:5868 [internal_api.py:execute():345] {"errors":[{"message":"run racing-car-dqn/2t7gt11r not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-06-05 01:01:04,103 ERROR   Thread-11 :5868 [step_upload.py:_handle_event():144] Failed to upload file: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/output.log
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2357, in upload_urls
+    query_result = self.gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:04,305 ERROR   wandb-upload_4:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:04,306 ERROR   wandb-upload_4:5868 [internal_api.py:execute():345] {"errors":[{"message":"run racing-car-dqn/2t7gt11r not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-06-05 01:01:04,306 ERROR   Thread-11 :5868 [step_upload.py:_handle_event():144] Failed to upload file: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/requirements.txt
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2357, in upload_urls
+    query_result = self.gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:04,306 ERROR   wandb-upload_2:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:04,306 ERROR   wandb-upload_2:5868 [internal_api.py:execute():345] {"errors":[{"message":"run racing-car-dqn/2t7gt11r not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-06-05 01:01:04,307 ERROR   Thread-11 :5868 [step_upload.py:_handle_event():144] Failed to upload file: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2357, in upload_urls
+    query_result = self.gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:04,320 ERROR   wandb-upload_3:5868 [internal_api.py:execute():344] 404 response executing GraphQL.
+2024-06-05 01:01:04,320 ERROR   wandb-upload_3:5868 [internal_api.py:execute():345] {"errors":[{"message":"run racing-car-dqn/2t7gt11r not found during createRunFiles","path":["createRunFiles"]}],"data":{"createRunFiles":null}}
+2024-06-05 01:01:04,320 ERROR   Thread-11 :5868 [step_upload.py:_handle_event():144] Failed to upload file: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/files/config.yaml
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 223, in run_and_notify
+    self._do_upload(event)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/step_upload.py", line 243, in _do_upload
+    job.run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    self.push()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 105, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2357, in upload_urls
+    query_result = self.gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/util.py", line 907, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-06-05 01:01:04,520 INFO    Thread-11 :5868 [sender.py:transition_state():613] send defer: 11
+2024-06-05 01:01:04,521 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:04,521 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-05 01:01:04,521 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:04,521 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-05 01:01:04,521 INFO    SenderThread:5868 [file_pusher.py:join():175] waiting for file pusher
+2024-06-05 01:01:04,521 INFO    SenderThread:5868 [sender.py:transition_state():613] send defer: 12
+2024-06-05 01:01:04,522 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: defer
+2024-06-05 01:01:04,522 INFO    HandlerThread:5868 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-05 01:01:04,522 DEBUG   SenderThread:5868 [sender.py:send_request():405] send_request: defer
+2024-06-05 01:01:04,522 INFO    SenderThread:5868 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-05 01:01:04,522 INFO    SenderThread:5868 [file_stream.py:finish():601] file stream finish called
+2024-06-05 01:01:04,603 ERROR   FileStreamThread:5868 [file_stream.py:_thread_except_body():500] generic exception in filestream thread
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe
+2024-06-05 01:01:04,642 DEBUG   HandlerThread:5868 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-05 01:01:04,859 INFO    SenderThread:5868 [file_stream.py:finish():605] file stream finish is done
+2024-06-05 01:01:04,859 ERROR   SenderThread:5868 [file_stream.py:finish():607] FileStream exception
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe
+2024-06-05 01:01:05,643 INFO    HandlerThread:5868 [handler.py:finish():882] shutting down handler
+2024-06-05 01:01:05,643 INFO    WriterThread:5868 [datastore.py:close():296] close: /home/alex/ECE239AS/DQN/wandb/run-20240605_005137-2t7gt11r/run-2t7gt11r.wandb
+2024-06-05 01:01:05,643 ERROR   StreamThr :5868 [internal.py:wandb_internal():173] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 48, in run
+    self._run()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 99, in _run
+    self._process(record)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/internal.py", line 327, in _process
+    self._sm.send(record)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 385, in send
+    send_handler(record)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 407, in send_request
+    send_handler(record)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 664, in send_request_defer
+    self._fs.finish(self._exit_code)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 610, in finish
+    raise self._exc_info[1].with_traceback(self._exc_info[2])
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 496, in _thread_except_body
+    self._thread_body()
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 452, in _thread_body
+    success = self._send(ready_chunks, uploaded=uploaded)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 541, in _send
+    self._handle_response(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/sdk/internal/file_stream.py", line 507, in _handle_response
+    wandb.termerror(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 64, in termerror
+    _log(
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/wandb/errors/term.py", line 103, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/home/alex/anaconda3/envs/239as/lib/python3.9/site-packages/click/utils.py", line 318, in echo
+    file.write(out)  # type: ignore
+BrokenPipeError: [Errno 32] Broken pipe

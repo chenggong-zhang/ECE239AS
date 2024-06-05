@@ -1,0 +1,1 @@
+{"total_reward": 328.0769230769255, "loss": 6.94786171452338, "_timestamp": 1717572266.881451, "_runtime": 2754.022946834564, "_step": 203, "mean_reward": 409.76788538197525, "std_reward": 173.43255438764987, "mean_test_reward": 588.7140798774444, "std_test_reward": 162.5054631101829, "_wandb": {"runtime": 2766}}
